@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+
+public class ReportCard{
+  
+	public ReportCard(){
+  
+  }
+  
+	public static void main(String[]args){
+		HashMap<String, Integer> reportCard = new HashMap<String, Integer>();
+		reportCard.put("History", 70);
+		reportCard.put("English", 65);
+    reportCard.put("Mathematic", 78);
+    reportCard.put("Biology", 82);
+    reportCard.put("Indonesia", 88);
+    reportCard.put("Civic", 76);
+  
+    Scanner input_name = new Scanner(System.in);
+    System.out.println("What is your name? ");
+    String name = input_name.next();
+  
+    for(String subject : reportCard.keySet()){
+      System.out.println(name + "'s " + subject + " grade is " + reportCard.get(subject));
+    }
+  }
+}
