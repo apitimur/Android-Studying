@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+class Coffee{
+	
+	String howMuchSugar;
+	int teaspoon;
+
+	public Coffee(){
+
+	}
+
+	public void printOrder(int amountOfSugar){
+		JOptionPane.showMessageDialog
+		(null, "You added " + amountOfSugar + " teaspoon of sugar.");
+	}
+
+	public static void main(String[]args){
+		Coffee myOrder = new Coffee();		
+		howMuchSugar = JOptionPane.showInputDialog("How much teaspoon of sugar?");
+		teaspoon = Integer.parseInt(howMuchSugar);
+		myOrder.printOrder(teaspoon);
+	}
+}
